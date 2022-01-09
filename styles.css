@@ -77,7 +77,7 @@ header h2	{
 	font-size: 2rem;
 }
 
-h1 {
+section h1 {
 	display: inline-block;
 	font-weight: 900;
   background: linear-gradient(270deg, var(--mdc-azul), var(--mdc-grape));
@@ -87,7 +87,7 @@ h1 {
   margin: 1rem 0 .3rem 0;
 }
 
-h2 {
+section h2 {
 	display: inline-block;
 	font-weight: 700;
   background: linear-gradient(270deg, var(--mdc-grape), var(--mdc-bubblegum));
