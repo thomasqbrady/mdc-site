@@ -80,7 +80,7 @@ header h2	{
 h1 {
 	display: inline-block;
 	font-weight: 900;
-  background: linear-gradient(90deg, var(--mdc-azul), var(--mdc-grape));
+  background: linear-gradient(270deg, var(--mdc-azul), var(--mdc-grape));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 1.5rem;
@@ -90,7 +90,7 @@ h1 {
 h2 {
 	display: inline-block;
 	font-weight: 700;
-  background: linear-gradient(90deg, var(--mdc-grape), var(--mdc-bubblegum));
+  background: linear-gradient(270deg, var(--mdc-grape), var(--mdc-bubblegum));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 	font-size: 1.25rem;
