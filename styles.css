@@ -32,8 +32,18 @@ body {
 	display: flex;
 	max-width: 69ch;
 	flex-direction: column;
-	margin: 40px auto;
-	padding: 0 32px;
+	margin: 48px auto;
+	padding: 32px;
+	background-color: white;
+	border-radius: 16px;
+	box-shadow: -2px 2px 0 var(--mdc-cherry), 
+		-4px 4px 0 var(--mdc-naranjo),
+		-6px 6px 0 var(--mdc-mango),
+		-8px 8px 0 var(--mdc-lime),
+		-10px 10px 0 var(--mdc-turquoise),
+		-12px 12px 0 var(--mdc-azul),
+		-14px 14px 0 var(--mdc-grape),
+		-16px 16px 0 var(--mdc-bubblegum);
 }
 
 body {
