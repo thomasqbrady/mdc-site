@@ -104,6 +104,10 @@ a:hover {
 	text-shadow: 0 0 4px hsla(171, 62%, 54%, 0.8);
 }
 
+b {
+	color: var(--mdc-bubblegum);
+}
+
 ul {
 	list-style: none;
 }
