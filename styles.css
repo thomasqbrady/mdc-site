@@ -1,0 +1,111 @@
+:root {
+	--mdc-cherry: hsl(352, 70%, 50%);
+	--mdc-naranjo: hsl(19, 97%, 51%);
+	--mdc-mango: hsl(44, 100%, 52%);
+	--mdc-lime:  hsl(112, 83%, 41%);
+	--mdc-turquoise: hsl(171, 62%, 54%);
+	--mdc-azul: hsl(217, 100%, 61%);
+	--mdc-grape: hsl(265, 83%, 57%);
+	--mdc-bubblegum: hsl(334, 100%, 50%);
+	--mdc-slate: hsl(60, 1%, 14%);
+	--mdc-adobe: hsl(240, 24%, 94%);
+}
+
+* {
+	font-family: 'Didact Gothic', sans-serif;
+	box-sizing: border-box;
+}
+
+.mdc {
+	font-weight: 900;
+  background: linear-gradient(270deg, var(--mdc-azul), var(--mdc-grape), var(--mdc-bubblegum), var(--mdc-naranjo));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body, html {
+	background-color: var(--mdc-adobe);
+	color:  var(--mdc-slate);
+}
+
+body {
+	display: flex;
+	max-width: 69ch;
+	flex-direction: column;
+	margin: 40px auto;
+	padding: 0 32px;
+}
+
+body {
+    font-size: 20px;
+}
+
+@media all and (max-device-width: 720px){
+    body {
+        font-size: 18px;
+    }
+}
+
+@media all and (max-device-width: 640px){
+    body {
+        font-size: 16px;
+    }
+}
+
+@media all and (max-device-width: 320px){
+    body {
+        font-size: 14px;
+    }
+}
+
+.logo-header {
+	width: 100%;
+}
+
+header h2	{
+	color: var(--mdc-azul);
+	font-size: 2rem;
+}
+
+h1 {
+	display: inline-block;
+	font-weight: 900;
+  background: linear-gradient(90deg, var(--mdc-azul), var(--mdc-grape));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  margin: 1rem 0 .3rem 0;
+}
+
+h2 {
+	display: inline-block;
+	font-weight: 700;
+  background: linear-gradient(90deg, var(--mdc-grape), var(--mdc-bubblegum));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	font-size: 1.25rem;
+	color: var(--mdc-grape);
+}
+
+h3 {
+	color: inherit;
+	font-size: 1.25rem;
+}
+
+a, a:visited {
+	transition: text-shadow .2s ease-out;
+	text-decoration: none;
+	color: var(--mdc-azul);
+	font-weight: 900;
+	text-shadow: 0 0 2px hsla(171, 62%, 54%, 0.2);
+}
+
+a:hover {
+	text-shadow: 0 0 4px hsla(171, 62%, 54%, 0.8);
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	margin-top: 5vh;
+}
