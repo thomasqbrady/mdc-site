@@ -104,6 +104,17 @@ a:hover {
 	text-shadow: 0 0 4px hsla(171, 62%, 54%, 0.8);
 }
 
+ul {
+	list-style: none;
+}
+
+li::before {
+	color: var(--mdc-grape);
+	content: "⤧ ";
+	position: relative;
+	top: -2px;
+}
+
 footer {
 	width: 100%;
 	text-align: center;
