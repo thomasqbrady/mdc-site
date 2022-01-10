@@ -1,14 +1,25 @@
 :root {
-	--mdc-cherry: hsl(352, 70%, 50%);
-	--mdc-naranjo: hsl(19, 97%, 51%);
-	--mdc-mango: hsl(44, 100%, 52%);
-	--mdc-lime:  hsl(112, 83%, 41%);
-	--mdc-turquoise: hsl(171, 62%, 54%);
-	--mdc-azul: hsl(217, 100%, 61%);
-	--mdc-grape: hsl(265, 83%, 57%);
-	--mdc-bubblegum: hsl(334, 100%, 50%);
-	--mdc-slate: hsl(60, 1%, 14%);
-	--mdc-adobe: hsl(240, 24%, 94%);
+	--mdc-cherry-raw: 352, 70%, 50%;
+	--mdc-naranjo-raw: 19, 97%, 51%;
+	--mdc-mango-raw: 44, 100%, 52%;
+	--mdc-lime-raw: 112, 83%, 41%;
+	--mdc-turquoise-raw: 171, 62%, 54%;
+	--mdc-azul-raw: 217, 100%, 61%;
+	--mdc-grape-raw: 265, 83%, 57%;
+	--mdc-bubblegum-raw: 334, 100%, 50%;
+	--mdc-slate-raw: 60, 1%, 14%;
+	--mdc-adobe-raw: 240, 24%, 94%;
+
+	--mdc-cherry: hsl(var(--mdc-cherry-raw));
+	--mdc-naranjo: hsl(var(--mdc-naranjo-raw));
+	--mdc-mango: hsl(var(--mdc-mango-raw));
+	--mdc-lime:  hsl(var(--mdc-lime-raw));
+	--mdc-turquoise: hsl(var(--mdc-turquoise-raw));
+	--mdc-azul: hsl(var(--mdc-azul-raw));
+	--mdc-grape: hsl(var(--mdc-grape-raw));
+	--mdc-bubblegum: hsl(var(--mdc-bubblegum-raw));
+	--mdc-slate: hsl(var(--mdc-slate-raw));
+	--mdc-adobe: hsl(var(--mdc-adobe-raw));
 }
 
 * {
@@ -36,14 +47,9 @@ body {
 	padding: 32px;
 	background-color: white;
 	border-radius: 16px;
-	box-shadow: -2px 2px 0 var(--mdc-cherry), 
-		-4px 4px 0 var(--mdc-naranjo),
-		-6px 6px 0 var(--mdc-mango),
-		-8px 8px 0 var(--mdc-lime),
-		-10px 10px 0 var(--mdc-turquoise),
-		-12px 12px 0 var(--mdc-azul),
-		-14px 14px 0 var(--mdc-grape),
-		-16px 16px 0 var(--mdc-bubblegum);
+	box-shadow: -0.25rem 0.25rem 0 var(--mdc-bubblegum), 
+		-0.5rem 0.5rem 0 var(--mdc-grape),
+		-0.75rem 0.75rem 0 var(--mdc-azul);
 }
 
 body {
@@ -107,11 +113,11 @@ a, a:visited {
 	text-decoration: none;
 	color: var(--mdc-azul);
 	font-weight: 900;
-	text-shadow: 0 0 2px hsla(171, 62%, 54%, 0.2);
+	text-shadow: 0 0 2px hsla(var(--mdc-turquoise-raw), 0.2);
 }
 
 a:hover {
-	text-shadow: 0 0 4px hsla(171, 62%, 54%, 0.8);
+	text-shadow: 0 0 4px hsla(var(--mdc-turquoise-raw), 0.8);
 }
 
 b {
