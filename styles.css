@@ -147,6 +147,19 @@ li::before {
 	top: -2px;
 }
 
+@media all and (min-device-width: 640px){
+	section.bio {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		column-gap: 2em;
+	}
+}
+
+.tqb-portrait {
+	width: 100%;
+	margin: auto;
+}
+
 footer {
 	width: 100%;
 	text-align: center;
