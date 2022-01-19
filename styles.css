@@ -158,8 +158,19 @@ li::before {
 .tqb-portrait {
 	width: 100%;
 	margin: auto;
+	filter: sepia(100%) hue-rotate(0);
+	animation:change-color 24s ease 4s infinite normal;
+	box-shadow: 0 4px 4px 0 hsla(var(--mdc-slate-raw),0.5);
 }
 
+@keyframes change-color {
+	0% {
+		filter: sepia(100%) hue-rotate(0);
+	}
+	100%{
+		filter: sepia(100%) hue-rotate(360deg);
+	}
+}
 footer {
 	width: 100%;
 	text-align: center;
