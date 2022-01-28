@@ -45,6 +45,10 @@
   -webkit-text-fill-color: transparent;
 }
 
+html {
+	touch-action:  manipulation;
+}
+
 body, html {
 	background-color: var(--mdc-adobe);
 	color:  var(--mdc-slate);
