@@ -17,9 +17,20 @@ let notes = {
 	c: cSnd
 }
 
+timeSinceLastStrike = {
+	m: 0,
+	d: 0,
+	c: 0
+}
+
 function playNote(event) {
 	let group = event.target.closest('g');
 	let noteName = group.id;
+	strikeTime = new Date().getTime();
+	if (strikeTime - timeSinceLastStrike[noteName] < 100) {
+		return;
+	}
+	timeSinceLastStrike[noteName] = strikeTime;
 	notes[noteName].currentTime = 0;
 	notes[noteName].play();
 	group.style.transform = 'translate(4px,4px)';
@@ -35,6 +46,7 @@ function liftKey(event) {
 
 keys.forEach((key) => {
 	key.addEventListener('mousedown', playNote);
+	key.addEventListener('touchstart', playNote);
 	// key.addEventListener('mouseup', liftKey);
 	// key.addEventListener('mouseout', liftKey);
 });
