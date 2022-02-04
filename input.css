@@ -5,7 +5,6 @@
 :root {
 	--mdc-cherry-raw: 352, 70%, 50%;
 	--mdc-naranjo-raw: 19, 97%, 51%;
-	--mdc-mango-raw: 44, 100%, 52%;
 	--mdc-lime-raw: 112, 83%, 41%;
 	--mdc-turquoise-raw: 171, 62%, 54%;
 	
@@ -21,6 +20,10 @@
 	--mdc-bubblegum-h: 334;
 	--mdc-bubblegum-s: 100%;
 	--mdc-bubblegum-l: 50%;
+	--mdc-mango-raw: 44, 100%, 52%;
+	--mdc-mango-h: 44;
+	--mdc-mango-s: 100%;
+	--mdc-mango-l: 52%;
 	
 	--mdc-slate-raw: 60, 1%, 14%;
 	--mdc-adobe-raw: 240, 24%, 94%;
@@ -123,13 +126,13 @@ a.highlight::before {
 	content: "";
 	inset: 0;
 	position: absolute;
-	transform: scaleX(0);
+	transform: scaleX(0.0);
 	transform-origin: right;
 	transition: transform 0.2s ease-in-out;
 	z-index: -1;
 }
 
 a.highlight:hover::before {
-	transform: scaleX(1.01);
+	transform: scaleX(1);
 	transform-origin: left;
 }
