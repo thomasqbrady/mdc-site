@@ -38,7 +38,7 @@
 }
 
 html {
-	touch-action:  manipulation;
+	/* touch-action:  manipulation; */
 	scroll-behavior: smooth;
 }
 
@@ -94,6 +94,11 @@ ul {
 	-webkit-text-fill-color: transparent;
 	text-shadow: -2px -2px white;
 }
+
+a, button {pointer-events: none;}
+a:link    { pointer-events: auto; }
+a:hover, button:hover   { pointer-events: auto; }
+a:active, button:active { pointer-events: auto; }
 
 a.highlight {
 	color: var(--mdc-bubblegum);

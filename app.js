@@ -6,6 +6,9 @@ let mSnd = document.querySelector('#m_snd');
 let dSnd = document.querySelector('#d_snd');
 let cSnd = document.querySelector('#c_snd');
 
+let menu = document.querySelector('.navbar .dropdown');
+let menuBtn = menu.querySelector('.btn');
+
 mSnd.volume = 0.2;
 dSnd.volume = 0.2;
 cSnd.volume = 0.2;
@@ -37,3 +40,12 @@ keys.forEach((key) => {
 	key.addEventListener('mousedown', playNote);
 });
 
+document.body.addEventListener('click', (event) => {
+	if (event.target === menu || event.target === menuBtn) {
+		menu.classList.toggle('dropdown-open');
+	} else {
+		if (menu.classList.contains('dropdown-open')) {
+			menu.classList.toggle('dropdown-open');
+		}	
+	}
+});
