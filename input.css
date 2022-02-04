@@ -39,6 +39,7 @@
 
 html {
 	touch-action:  manipulation;
+	--scroll-behavior: smooth;
 	scroll-behavior: smooth;
 }
 
