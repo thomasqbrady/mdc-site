@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--mdc-cherry-raw: 352, 70%, 50%;
+	--mdc-naranjo-raw: 19, 97%, 51%;
+	--mdc-mango-raw: 44, 100%, 52%;
+	--mdc-lime-raw: 112, 83%, 41%;
+	--mdc-turquoise-raw: 171, 62%, 54%;
+	
+	--mdc-azul-raw: 217, 100%, 61%;
+	--mdc-azul-h: 217;
+	--mdc-azul-s: 100%;
+	--mdc-azul-l: 61%;
+	--mdc-grape-raw: 265, 83%, 57%;
+	--mdc-grape-h: 265;
+	--mdc-grape-s: 83%;
+	--mdc-grape-l: 57%;
+	--mdc-bubblegum-raw: 334, 100%, 50%;
+	--mdc-bubblegum-h: 334;
+	--mdc-bubblegum-s: 100%;
+	--mdc-bubblegum-l: 50%;
+	
+	--mdc-slate-raw: 60, 1%, 14%;
+	--mdc-adobe-raw: 240, 24%, 94%;
+	
+	--mdc-cherry: hsl(var(--mdc-cherry-raw));
+	--mdc-naranjo: hsl(var(--mdc-naranjo-raw));
+	--mdc-mango: hsl(var(--mdc-mango-raw));
+	--mdc-lime:  hsl(var(--mdc-lime-raw));
+	--mdc-turquoise: hsl(var(--mdc-turquoise-raw));
+	--mdc-azul: hsl(var(--mdc-azul-raw));
+	--mdc-grape: hsl(var(--mdc-grape-raw));
+	--mdc-bubblegum: hsl(var(--mdc-bubblegum-raw));
+	--mdc-slate: hsl(var(--mdc-slate-raw));
+	--mdc-adobe: hsl(var(--mdc-adobe-raw));
+}
+
+html {
+	touch-action:  manipulation;
+	scroll-behavior: smooth;
+}
+
+#logo-sc .fg {
+	fill: #fff;
+}
+
+svg .m-bg {
+	fill:hsl(var(--mdc-bubblegum-h),var(--mdc-bubblegum-s),calc(var(--mdc-bubblegum-l) * 0.5));
+}
+
+svg .m-fg {
+	fill:var(--mdc-bubblegum);
+}
+
+svg .d-bg {
+	fill:hsl(var(--mdc-grape-h),var(--mdc-grape-s),calc(var(--mdc-grape-l) * 0.5));
+}
+
+svg .d-fg {
+	fill:var(--mdc-grape);
+}
+
+svg .c-bg {
+	fill:hsl(var(--mdc-azul-h),var(--mdc-azul-s),calc(var(--mdc-azul-l) * 0.5));
+}
+
+svg .c-fg {
+	fill:var(--mdc-azul)
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: 700 !important;
+}
+
+p, ul {
+	margin-bottom: 1rem;
+}
+
+ul {
+	margin-left: 1.6rem;
+}
+
+.mdc {
+	font-weight: 700;
+	position: relative;
+	top: 2px;
+	left: 2px;
+	background: linear-gradient(270deg, var(--mdc-azul), var(--mdc-turquoise), var(--mdc-bubblegum), var(--mdc-naranjo));
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: -2px -2px white;
+}
+
+a.highlight {
+	color: var(--mdc-bubblegum);
+	font-weight: 900;
+	position: relative;
+	text-decoration: none;
+	z-index: 10;
+}
+
+a.highlight::before {
+	background: var(--mdc-mango);
+	content: "";
+	inset: 0;
+	position: absolute;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.2s ease-in-out;
+	z-index: -1;
+}
+
+a.highlight:hover::before {
+	transform: scaleX(1.01);
+	transform-origin: left;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "mdc-site",
+  "version": "1.0.0",
+  "description": "Martes Delta Co site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postcss": "postcss ./input.css -o dist/output.css",
+    "watch-postcss": "postcss ./input.css -o dist/output.css -w"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
+    "concurrently": "^6.2.1",
+    "daisyui": "^1.10.0",
+    "postcss-import": "^14.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasqbrady/mdc-site.git"
+  },
+  "author": "@thomasqbrady",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/thomasqbrady/mdc-site/issues"
+  },
+  "homepage": "https://github.com/thomasqbrady/mdc-site#readme"
+}
