@@ -6,6 +6,7 @@ let mSnd = document.querySelector('#m_snd');
 let dSnd = document.querySelector('#d_snd');
 let cSnd = document.querySelector('#c_snd');
 
+let nav = document.querySelector('.navbar');
 let menu = document.querySelector('.navbar .dropdown');
 let menuBtn = menu.querySelector('.btn');
 
@@ -47,5 +48,13 @@ document.body.addEventListener('click', (event) => {
 		if (menu.classList.contains('dropdown-open')) {
 			menu.classList.toggle('dropdown-open');
 		}	
+	}
+});
+
+document.addEventListener('scroll', (event) => {
+	if (window.scrollY > 0) {
+		nav.classList.add('shadow-2xl');
+	} else {
+		nav.classList.remove('shadow-2xl');
 	}
 });
